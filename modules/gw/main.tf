@@ -19,6 +19,7 @@ resource "proxmox_virtual_environment_vm" "gw" {
   stop_on_destroy = true
 
   initialization {
+    datastore_id = "vm"
     ip_config {
       ipv4 {
         address = "5.43.226.178/24"
